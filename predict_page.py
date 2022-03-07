@@ -58,10 +58,16 @@ def show_predict_page():
     
     if ok:
         X = np.array([[age,sex,chest_pain,bloodpressure,cholesterol,fasting_bloodsugar,ecg,max_heart_rate,exercise_angina,old_peak,st_slope]])
-        X=sc.fit_transform(X)
+        st.write(X)
+        
         
         prediction = rfc.predict(X)
-        st.write(prediction)
+        if prediction == 0:
+            st.subheader("No major risk found")
+        else:
+            st.subheader("High risk of heart disease.")
+
+
 
     
 
