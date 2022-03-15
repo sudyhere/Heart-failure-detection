@@ -20,9 +20,9 @@ chest_pain_type = ["Typical Angina","Atypical Angina","Non-Anginal Pain", "Asymp
 sc = StandardScaler()
 def show_predict_page():
     st.title("Heart Failure Detection ")
-    st.write("""We need data for detection""")
+    st.write("""We need clinical data for the diagnosis""")
     age = st.slider("Age", min_value=1,max_value=115)
-    sex = st.selectbox("sex", ["Male", "Female"])
+    sex = st.selectbox("Sex", ["Male", "Female"])
     if sex == "Male":
         sex =0 
     if sex == "Female":
