@@ -29,7 +29,7 @@ def show_predict_page():
     chest_pain = st.selectbox("Chest pain type",chest_pain_type)
     
 
-    bloodpressure = st.slider("Resting blood pressure (in mm Hg onadmission to hospital)",min_value=10,max_value=250)
+    bloodpressure = st.slider("Resting blood pressure (in mm Hg on admission to hospital)",min_value=10,max_value=250)
 
     cholesterol = st.slider("Serum Cholesterol in mg/dl",min_value=100,max_value=650)
 
